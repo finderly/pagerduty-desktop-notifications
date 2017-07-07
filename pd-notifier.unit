@@ -3,7 +3,8 @@ Description=Pagerduty Desktop Notifications
 
 [Service]
 ExecStart=/path/to/pagerduty-desktop-notifications.py
-
+User=localuser
+Group=localuser
 
 [Install]
 WantedBy=multi-user.target

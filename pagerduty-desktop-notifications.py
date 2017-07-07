@@ -6,8 +6,13 @@
 import json
 import logging
 import time
+import os
 import pynotify
 import requests
+
+# set diplay to be used
+os.environ.setdefault('XAUTHORITY', '~/.Xauthority')
+os.environ.setdefault('DISPLAY', ':0.0')
 
 log = logging.getLogger('pagerduty')
 token = ''
