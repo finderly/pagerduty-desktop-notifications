@@ -1,0 +1,9 @@
+[Unit]
+Description=Pagerduty Desktop Notifications
+
+[Service]
+ExecStart=/path/to/pagerduty-desktop-notifications.py
+
+
+[Install]
+WantedBy=multi-user.target
