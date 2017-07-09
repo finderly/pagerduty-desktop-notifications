@@ -55,7 +55,7 @@ def show(userid, incident):
 
     if user == userid:
         summary = 'PagerDuty: ' + body_int['urgency']
-        if 'description' in body_int:
+        if 'description' in body_int['trigger_summary_data']:
             body = body_int['trigger_summary_data']['description']
         else:
             body = body_int['trigger_summary_data']['subject']
