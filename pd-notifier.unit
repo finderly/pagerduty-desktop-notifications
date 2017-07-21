@@ -1,5 +1,7 @@
 [Unit]
 Description=Pagerduty Desktop Notifications
+Wants=network-online.target
+After=network-online.target
 
 [Service]
 ExecStart=/path/to/pagerduty-desktop-notifications.py
